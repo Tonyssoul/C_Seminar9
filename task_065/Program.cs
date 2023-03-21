@@ -19,6 +19,13 @@ void Print(int numM, int numN)
     System.Console.Write(numN + "\t");
 }
 
+Metka:
 int m = ReadInt("Введите число M ");
 int n = ReadInt("Введите число N ");
 Print(m, n);
+
+if (n <= m)
+{
+    System.Console.WriteLine("Нет чисел в промежутке от M до N. Повторите ввод!");
+    goto Metka;
+}
